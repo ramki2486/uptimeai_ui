@@ -1,0 +1,129 @@
+header {
+  padding: 16px 32px;
+  background-color: $PRIMARY;
+  font-size: 14px;
+  line-height: 1.5;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .logo {
+        i {
+          font-size: 32px;
+          color: white;
+        }
+      }
+
+      .list-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+
+        input {
+          display: table-cell;
+          width: 100%;
+          padding-top: 0;
+          padding-bottom: 0;
+          background: none;
+          border: 1px solid gray;
+          box-shadow: none;
+          border-radius: 6px;
+          outline: none;
+          min-height: 28px;
+          padding: 5px 12px;
+        }
+
+        a {
+          list-style: none;
+          text-decoration: none;
+          color: white;
+          font-weight: 600;
+          padding: 8px 0;
+          white-space: nowrap;
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .accounts {
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 16px;
+        color: white;
+        margin-right: 8px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 26px 22px;
+    .navbar {
+      .list {
+        .menu div {
+          width: 20px;
+          height: 2px;
+          margin-bottom: 6px;
+          background-color: gray;
+        }
+        .menu div:last-child {
+          margin-bottom: 0;
+        }
+        .logo {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .list-group {
+          display: none;
+        }
+        .menu-list {
+          padding: 0 12px;
+          margin-left: 0;
+          position: absolute;
+          display: block;
+          width: 100%;
+          top: 68px;
+          left: 0;
+          background-color: $PRIMARY;
+
+          a.first-link {
+            margin-top: 16px;
+          }
+
+          a {
+            display: block;
+            border-top: 1px solid gray;
+            margin-left: 4px;
+          }
+        }
+      }
+      .accounts {
+        i {
+          font-size: 21px;
+        }
+        .plus-mobile,
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
