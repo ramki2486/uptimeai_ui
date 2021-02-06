@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
+          s
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -19,7 +20,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
