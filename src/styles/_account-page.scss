@@ -1,0 +1,17 @@
+.accounts-page {
+  display: flex;
+  flex-direction: row;
+
+  .profile-content {
+    flex-grow: 1;
+    margin-left: 80px;
+  }
+  .data-content {
+    flex-grow: 7;
+    margin-right: 80px;
+  }
+  .profile-content,
+  .data-content {
+    margin-top: 24px;
+  }
+}

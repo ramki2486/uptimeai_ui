@@ -1,0 +1,67 @@
+.profile {
+  width: 57%;
+  padding-top: 1.8rem;
+  margin: auto;
+
+  .profile-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #00000000;
+    border: 1px solid #e1e4e8;
+  }
+
+  .name {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .username {
+    font-size: 20px;
+    color: #586069;
+    font-weight: 400;
+  }
+
+  .edit-button {
+    text-align: center;
+    width: 100%;
+    background-color: #fafbfc;
+    color: #25292e;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 20px;
+    border: 0.5px solid lightgray;
+    height: 30px;
+    margin: 16px 0;
+  }
+
+  .following-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    i,
+    span {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+
+  hr {
+    margin-top: 22px;
+  }
+
+  .highlights {
+    padding: 8px 0;
+    .title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      margin-top: 8px;
+      color: #586069;
+      font-size: 14px;
+    }
+  }
+}
