@@ -1,28 +1,11 @@
-const RepositoryCard = () => {
+/* eslint-disable react/prop-types */
+const RepositoryCard = ({ title, language }) => {
   return (
     <>
       <div className="repository-card">
-        <h4 className="title">movie_react</h4>
+        <h4 className="title">{title}</h4>
         <div className="language">
-          <i className="fas fa-circle"></i> <h5>JavaScript</h5>
-        </div>
-      </div>
-      <div className="repository-card">
-        <h4 className="title">movie_react</h4>
-        <div className="language">
-          <i className="fas fa-circle"></i> <h5>JavaScript</h5>
-        </div>
-      </div>
-      <div className="repository-card">
-        <h4 className="title">movie_react</h4>
-        <div className="language">
-          <i className="fas fa-circle"></i> <h5>JavaScript</h5>
-        </div>
-      </div>
-      <div className="repository-card">
-        <h4 className="title">movie_react</h4>
-        <div className="language">
-          <i className="fas fa-circle"></i> <h5>JavaScript</h5>
+          <i className="fas fa-circle"></i> <h5>{language}</h5>
         </div>
       </div>
     </>

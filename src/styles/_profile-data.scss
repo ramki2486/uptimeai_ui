@@ -92,6 +92,7 @@
 
       h4 {
         font-size: 16px;
+        font-weight: 500;
       }
 
       .month-date {
@@ -111,10 +112,73 @@
       }
 
       .respository-dates {
-        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 32px;
         h4 {
           font-size: 16px;
           font-weight: 500;
+        }
+
+        i {
+          margin-right: 16px;
+        }
+
+        .icon {
+          background-color: white;
+          z-index: 20;
+          color: gray;
+        }
+
+        .line-icon {
+          border-left: 1px solid gray;
+          position: absolute;
+          height: 80px;
+          top: 54px;
+          left: 5px;
+        }
+      }
+
+      .repos-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1.8rem;
+        margin-top: 1rem;
+        align-items: center;
+
+        .repo-name,
+        .repo-language {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          i {
+            margin-right: 5px;
+            color: gray;
+          }
+        }
+
+        .repo-name {
+          h4 {
+            color: #0366d6;
+            font-size: 14px;
+          }
+        }
+
+        .repo-language {
+          h4 {
+            font-size: 14px;
+          }
+          i {
+            color: yellow;
+          }
+        }
+
+        .date {
+          h4 {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -123,14 +187,50 @@
       flex-grow: 1;
       h5 {
         font-size: 12px;
-        background-color: #0366d6;
         padding: 8px 16px;
         cursor: pointer;
         border-radius: 6px;
         margin-bottom: 8px;
         border-radius: 6px;
-        color: white;
         font-weight: 600;
+      }
+
+      .last-year {
+        background-color: #0366d6;
+        color: white;
+      }
+    }
+  }
+  .activity-button {
+    text-align: center;
+    width: 100%;
+    background-color: #fafbfc;
+    color: #0366d6;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 20px;
+    border: 0.5px solid lightgray;
+    height: 35px;
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .profile-data {
+    .links {
+      overflow-x: auto;
+    }
+    .contribution {
+      .years {
+        display: none;
+      }
+    }
+    .repositories {
+      grid-template-columns: 100%;
+      .repository-card {
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
       }
     }
   }

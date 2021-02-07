@@ -15,3 +15,20 @@
     margin-top: 24px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .accounts-page {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+
+    .profile-content {
+      margin-left: 0;
+    }
+
+    .data-content {
+      margin-right: 0;
+    }
+  }
+}

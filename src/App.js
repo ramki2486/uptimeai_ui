@@ -6,6 +6,7 @@ function App() {
     <>
       <Header />
       <Account />
+      <hr />
     </>
   )
 }

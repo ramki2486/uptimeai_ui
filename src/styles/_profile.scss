@@ -14,6 +14,7 @@
   .name {
     font-size: 26px;
     margin-top: 20px;
+    font-weight: 600;
   }
 
   .username {
@@ -62,6 +63,27 @@
       margin-top: 8px;
       color: #586069;
       font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .profile {
+    padding: 0 10px;
+    width: 100%;
+    .profile-img {
+      width: 90px;
+      height: 90px;
+    }
+    .pro-names {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .name {
+      width: 230px;
+      margin-top: 0;
     }
   }
 }

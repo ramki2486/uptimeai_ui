@@ -1,22 +1,26 @@
-import ProfileImg from '../../assests/pro-img.jpeg'
+import PropTypes from 'prop-types'
 
-const Profile = () => {
+const Profile = ({ data }) => {
   return (
     <div className="profile">
-      <img src={ProfileImg} alt="profile_img" className="profile-img" />
-      <h2 className="name">RAMA KISHORE CHIRATLA</h2>
-      <h3 className="username">ramki2486</h3>
+      <div className="pro-names">
+        <img src={data?.avatar_url} alt="profile_img" className="profile-img" />
+        <div>
+          <h2 className="name">{data?.name}</h2>
+          <h3 className="username">{data?.login}</h3>
+        </div>
+      </div>
       <button className="edit-button" type="button">
         Edit Profile
       </button>
       <div className="following-data">
         <i className="far fa-user"></i>
         <span>
-          <b>1</b> follower
+          <b>{data?.followers}</b> follower
         </span>
         {' · '}
         <span>
-          <b>0</b> follower
+          <b>{data?.following}</b> following
         </span>
         {' · '}
         <i className="far fa-star"></i>
@@ -33,6 +37,10 @@ const Profile = () => {
       </div>
     </div>
   )
+}
+
+Profile.propTypes = {
+  data: PropTypes.object.isRequired,
 }
 
 export default Profile
